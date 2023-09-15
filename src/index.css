@@ -1,13 +1,41 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: 'Custom-Montserrat';
+    src: url('../public/fonts/Montserrat\ Alternates\ Medium.ttf');
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+@font-face {
+    font-family: 'Rubik-Medium';
+    src: url('../public/fonts/Rubik\ Medium.ttf');
+}
+
+.font-custom-montserrat {
+    font-family: 'Custom-Montserrat';
+}
+
+.font-rubik-medium {
+    font-family: 'Rubik-Medium';
+}
+
+.card-shadow {
+    -webkit-box-shadow: 10px 10px 26px -1px rgba(237, 237, 237, 1);
+    -moz-box-shadow: 10px 10px 26px -1px rgba(237, 237, 237, 1);
+    box-shadow: 10px 10px 26px -1px rgba(237, 237, 237, 1);
+}
+
+.custom-link-button {
+    padding: 5px 12px;
+    background-color: #00d1cd;
+    color: #fff;
+    display: inline-block;
+    width: fit-content;
+    border-radius: 3px;
+    transition: ease-in-out 0.3s;
+}
+
+.custom-link-button:hover {
+    background-color: #444;
 }
